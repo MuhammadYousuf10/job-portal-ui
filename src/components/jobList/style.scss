@@ -1,0 +1,26 @@
+.job-list {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e9ecef;
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .sub-heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    .heading4 {
+      color: $darkBlue;
+    }
+  }
+  .jobs {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

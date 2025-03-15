@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../assets/fonts/NeueHaasGroteskDisplayPro-Regular.woff2")
+      format("woff2"),
+    url("../assets/fonts/NeueHaasGroteskDisplayPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../assets/fonts/NeueHaasGroteskDisplayPro-Bold.woff2")
+      format("woff2"),
+    url("../assets/fonts/NeueHaasGroteskDisplayPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Apply to body or specific elements
+body {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}

@@ -1,0 +1,58 @@
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 21px;
+
+  .search-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .separator {
+      width: 1px;
+      height: 36px;
+      background-color: #e9ecef;
+    }
+    .select {
+      background-image: url(/src/assets/images/select-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding: 10px 30px 10px 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #585d6e;
+      border: none;
+      outline: none;
+      appearance: none;
+    }
+    select:focus {
+      outline: none;
+    }
+    .select-wrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .select-wrapper::before,
+    .select-wrapper::after {
+      content: "|";
+      font-size: 18px;
+      color: #585d6e;
+      padding: 0 10px;
+    }
+    .btn-primary {
+      font-size: 14px;
+      min-width: 140px;
+      margin-left: 28px;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
