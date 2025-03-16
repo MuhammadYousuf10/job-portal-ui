@@ -1,7 +1,6 @@
 .job-card-section {
   max-width: 182px;
   flex: 0 0 182px;
-  min-height: 164px;
   border-radius: 10px;
   background-color: $white;
   .job-card {
@@ -47,9 +46,15 @@
             object-fit: contain;
           }
         }
+        .para-sm {
+          color: $lightGrey;
+          span{
+            color: $darkBlue;
+          }
+        }
       }
       .content-wrap:first-of-type {
-        margin-bottom: 5px;
+        margin-bottom: 6px;
       }
       .bottom-section {
         display: flex;

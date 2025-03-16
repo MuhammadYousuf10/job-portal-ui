@@ -33,13 +33,17 @@
         }
       }
       .profile-content {
-        margin-top: 60px;
+        margin-top: 54px;
         padding: 0 20px 20px;
-        p {
-          &.para-sm {
-            color: $lightGrey;
-            margin-top: 5px;
-          }
+        .heading2 {
+          margin-bottom: 2px;
+        }
+        .para-lg {
+          color: $black;
+        }
+        .para-sm {
+          color: $lightGrey;
+          margin-top: 5px;
         }
       }
     }
@@ -57,7 +61,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin: 10px 0;
+        margin: 11px 0;
         position: relative;
         &:first-child {
           margin-top: 0;

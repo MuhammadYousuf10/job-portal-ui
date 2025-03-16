@@ -22,9 +22,9 @@ const Sidebar = () => {
             <img src={avatar} alt="" />
           </div>
           <div className="profile-content">
-            <h2>Albert Flores</h2>
-            <p>Senior Product Designer | UI/UX</p>
-            <p>Designer | Graphic Designer | Web...</p>
+            <h2 className="heading2">Albert Flores</h2>
+            <p className="para-lg">Senior Product Designer | UI/UX</p>
+            <p className="para-lg">Designer | Graphic Designer | Web...</p>
             <p className="para-sm">Clinton, Maryland</p>
           </div>
         </div>

@@ -79,6 +79,6 @@ export const recommendedJobsData = [
     location: "Seattle, USA (Remote)",
     postedDate: "1 day ago",
     applicants: 22,
-    isPromoted: true,
+    isPromoted: false,
   },
 ];

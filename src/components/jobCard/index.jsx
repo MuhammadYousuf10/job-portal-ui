@@ -1,9 +1,9 @@
 import React from "react";
-import "./style.scss";
 import teamsLogo from "../../assets/images/teams-logo.svg";
 import locationIcon from "../../assets/images/location-icon.svg";
 import clockIcon from "../../assets/images/clock-icon.svg";
 import btnTag from "../../assets/images/btn-tag.svg";
+import "./style.scss";
 
 const JobCard = ({ job }) => {
   return (

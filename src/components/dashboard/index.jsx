@@ -3,9 +3,8 @@ import Navbar from "../navbar";
 import Sidebar from "../sidebar";
 import SearchBar from "../searchBar";
 import JobList from "../jobList";
-import "../dashboard/style.scss";
 import JobListTabs from "../jobListTabs";
-// import jobsData from "../../data/jobsData";
+import "../dashboard/style.scss";
 import { jobsData, recommendedJobsData } from "../../data/jobsData";
 
 const Dashboard = () => {
