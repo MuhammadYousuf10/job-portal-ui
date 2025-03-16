@@ -3,6 +3,14 @@
   flex: 0 0 182px;
   border-radius: 10px;
   background-color: $white;
+  @media #{$vp-mobile} {
+    max-width: 49%;
+    flex: 0 0 49%;
+  }
+  @media #{$vp-mobile-sm} {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
   .job-card {
     padding: 10px 12px;
     .badge {
@@ -48,7 +56,7 @@
         }
         .para-sm {
           color: $lightGrey;
-          span{
+          span {
             color: $darkBlue;
           }
         }

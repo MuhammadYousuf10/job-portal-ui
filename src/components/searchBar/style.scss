@@ -6,15 +6,31 @@
   padding: 20px;
   border-radius: 10px;
   margin-top: 21px;
-
+  @media #{$vp-tablet-landscape} {
+    padding: 20px 10px;
+  }
+  @media #{$vp-mobile} {
+    flex-direction: column;
+  }
+  .para-lg {
+    @media #{$vp-mobile} {
+      margin-bottom: 10px;
+    }
+  }
   .search-content {
     display: flex;
     align-items: center;
     gap: 10px;
+    @media #{$vp-mobile} {
+      gap: 5px;
+    }
     .separator {
       width: 1px;
       height: 36px;
       background-color: #e9ecef;
+      @media #{$vp-mobile} {
+        display: none;
+      }
     }
     .select {
       background-image: url(/src/assets/images/select-arrow.svg);
@@ -27,6 +43,9 @@
       border: none;
       outline: none;
       appearance: none;
+      @media #{$vp-desktop} {
+        font-size: 12px;
+      }
     }
     select:focus {
       outline: none;
@@ -50,8 +69,19 @@
       font-size: 14px;
       min-width: 140px;
       margin-left: 18px;
+      @media #{$vp-desktop} {
+        font-size: 12px;
+        min-width: auto;
+        margin-left: 10px;
+      }
+      @media #{$vp-mobile} {
+        margin: 0;
+      }
       span {
         margin-left: 10px;
+        @media #{$vp-mobile} {
+          display: none;
+        }
       }
     }
   }

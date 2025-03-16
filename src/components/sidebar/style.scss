@@ -2,6 +2,10 @@
   max-width: 25.8%;
   flex: 0 0 25.8%;
   border-radius: 10px;
+  @media #{$vp-tablet-portrait} {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
   .side-bar-wrapper {
     .profile-section {
       text-align: center;
@@ -86,6 +90,9 @@
           color: $darkBlue;
           font-size: 16px;
           font-weight: 500;
+          @media #{$vp-desktop} {
+            font-size: 14px;
+          }
         }
       }
     }

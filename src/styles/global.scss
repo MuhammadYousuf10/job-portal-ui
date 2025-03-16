@@ -68,12 +68,15 @@ p,
   font-weight: $font-weight-medium;
   margin: 0;
   @media #{$vp-desktop} {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 body {
   margin: 0;
   background-color: #f4f4f4;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 ol,
 ul {
@@ -96,6 +99,9 @@ a {
     max-width: 1024px;
     padding: 0 30px;
   }
+  @media #{$vp-tablet-portrait} {
+    padding: 0 20px;
+  }
 }
 // Base Button Styles
 .btn {
@@ -111,7 +117,6 @@ a {
   transition: all 0.3s ease-in-out;
   border: none;
   white-space: nowrap;
-  // font-family: $font-primary;
   font-size: $font-size-btn;
   font-weight: $font-weight-medium;
   @media #{$vp-desktop} {
@@ -119,6 +124,7 @@ a {
   }
   @media #{$vp-tablet-landscape} {
     font-size: 12px;
+    padding: 8px 12px;
   }
 }
 // Primary Button

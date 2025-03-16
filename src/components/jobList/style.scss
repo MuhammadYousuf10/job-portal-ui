@@ -13,6 +13,9 @@
     justify-content: flex-start;
     gap: 15px;
     margin-bottom: 15px;
+    @media #{$vp-mobile-xs} {
+      gap: 8px;
+    }
     .heading4 {
       color: $darkBlue;
       position: relative;
@@ -33,5 +36,9 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 16px;
+    @media #{$vp-mobile} {
+      gap: 10px;
+      justify-content: space-between;
+    }
   }
 }

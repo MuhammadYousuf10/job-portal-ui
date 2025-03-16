@@ -10,6 +10,11 @@
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
+    @media #{$vp-mobile-sm} {
+      flex-wrap: nowrap;
+      overflow: auto;
+      padding-bottom: 10px;
+    }
     .tabs-btn {
       padding: 8px 15px;
       font-size: 12px;

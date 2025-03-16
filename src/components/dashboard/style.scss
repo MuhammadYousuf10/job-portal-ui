@@ -1,23 +1,33 @@
 .dashboard {
   display: flex;
   flex-direction: column;
-  .main-content {
-    display: flex;
-    gap: 24px;
-    margin-top: 25px;
-    .content {
-      margin-top: 14px;
-      width: 100%;
-      max-width: 72.53%;
-      flex: 0 0 72.53%;
-      .heading1 {
-        margin-bottom: 5px;
-        span {
-          color: $darkBlue;
-        }
+  .dashboard-layout {
+    margin-top: 70px;
+    .main-content {
+      display: flex;
+      gap: 24px;
+      margin-top: 25px;
+      @media #{$vp-tablet-portrait} {
+        flex-direction: column;
       }
-      .para-lg {
-        color: $lightGrey;
+      .content {
+        margin-top: 14px;
+        width: 100%;
+        max-width: 72.53%;
+        flex: 0 0 72.53%;
+        @media #{$vp-tablet-portrait} {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        .heading1 {
+          margin-bottom: 5px;
+          span {
+            color: $darkBlue;
+          }
+        }
+        .para-lg {
+          color: $lightGrey;
+        }
       }
     }
   }
