@@ -3,3 +3,26 @@ $grey: #737a91;
 $white: #ffffff;
 $black: #333333;
 $lightGrey: #585d6e;
+// Font Sizes
+$font-size-h1: 22px;
+$font-size-h2: 18px;
+$font-size-h3: 16px;
+$font-size-h4: 14px;
+$font-size-para-lg: 14px;
+$font-size-para-sm: 12px;
+$font-size-btn: 16px;
+$font-size-btn-sm: 12px;
+$font-size-btn-lg: 18px;
+
+// Font Weights
+$font-weight-bold: 600;
+$font-weight-medium: 500;
+// Media Sizes
+$vp-desktop-xl: "(min-width: 1920px)"; // Extra-large desktops
+$vp-desktop-lg: "(max-width: 1440px)"; // Large desktops
+$vp-desktop: "(max-width: 1280px)"; // Standard desktops
+$vp-tablet-landscape: "(max-width: 1024px)"; // Large tablets (Landscape mode)
+$vp-tablet-portrait: "(max-width: 768px)"; // Regular tablets (Portrait mode)
+$vp-mobile: "(max-width: 600px)"; // Standard mobile devices
+$vp-mobile-sm: "(max-width: 480px)"; // Small mobile devices
+$vp-mobile-xs: "(max-width: 360px)"; // Extra-small mobile devices

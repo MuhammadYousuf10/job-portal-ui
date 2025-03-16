@@ -1,45 +1,75 @@
 h1,
 .heading1 {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bold;
   margin: 0;
   color: $black;
+  @media #{$vp-desktop} {
+    font-size: 20px;
+  }
+  @media #{$vp-tablet-landscape} {
+    font-size: 18px;
+  }
+  &.bold {
+    font-weight: 700;
+  }
 }
 h2,
 .heading2 {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: $font-size-h2;
+  font-weight: $font-weight-bold;
   margin: 0;
   color: $black;
+  @media #{$vp-desktop} {
+    font-size: 16px;
+  }
+  @media #{$vp-tablet-landscape} {
+    font-size: 14px;
+  }
 }
 h3,
 .heading3 {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: $font-size-h3;
+  font-weight: $font-weight-bold;
   margin: 0;
   color: $black;
+  @media #{$vp-desktop} {
+    font-size: 14px;
+  }
+  @media #{$vp-tablet-landscape} {
+    font-size: 12px;
+  }
 }
 h4,
 .heading4 {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: $font-size-h4;
+  font-weight: $font-weight-medium;
   margin: 0;
   color: $black;
+  @media #{$vp-desktop} {
+    font-size: 12px;
+  }
 }
 p,
 .para-lg {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: $font-size-para-lg;
+  font-weight: $font-weight-medium;
   margin: 0;
+  @media #{$vp-desktop} {
+    font-size: 12px;
+  }
 }
 .para-sm {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: $font-size-para-sm;
+  font-weight: $font-weight-medium;
   margin: 0;
+  @media #{$vp-desktop} {
+    font-size: 10px;
+  }
 }
 body {
   margin: 0;
@@ -58,6 +88,14 @@ a {
   max-width: 1443px;
   margin: 0 auto;
   padding: 0 49px 0 50px;
+  @media #{$vp-desktop} {
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+  @media #{$vp-tablet-landscape} {
+    max-width: 1024px;
+    padding: 0 30px;
+  }
 }
 // Base Button Styles
 .btn {
@@ -66,8 +104,6 @@ a {
   justify-content: center;
   align-items: center;
   padding: 10px 17px;
-  font-size: 16px;
-  font-weight: 500;
   text-align: center;
   text-decoration: none;
   border-radius: 8px;
@@ -75,6 +111,15 @@ a {
   transition: all 0.3s ease-in-out;
   border: none;
   white-space: nowrap;
+  // font-family: $font-primary;
+  font-size: $font-size-btn;
+  font-weight: $font-weight-medium;
+  @media #{$vp-desktop} {
+    font-size: 14px;
+  }
+  @media #{$vp-tablet-landscape} {
+    font-size: 12px;
+  }
 }
 // Primary Button
 .btn-primary {
